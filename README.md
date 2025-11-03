@@ -59,20 +59,45 @@ The application includes built-in authentication with secure practices:
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
+### Option A: Docker (Recommended)
+
+The easiest way to get started:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Hosteroid/domain-monitor.git
+cd domain-monitor
+
+# 2. Copy environment file
+cp .env.docker .env
+
+# 3. Edit .env and set secure passwords
+nano .env  # or use your preferred editor
+
+# 4. Start containers
+docker-compose up -d
+
+# 5. Visit http://localhost:8080 and follow the installer
+```
+
+See [docker/README.md](docker/README.md) for detailed Docker documentation.
+
+### Option B: Manual Installation
+
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Hosteroid/domain-monitor.git
 cd domain-monitor
 ```
 
-### 2. Install Dependencies
+#### 2. Install Dependencies
 
 ```bash
 composer install
 ```
 
-### 3. Configure Environment
+#### 3. Configure Environment
 
 Copy the example environment file:
 

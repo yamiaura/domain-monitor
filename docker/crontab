@@ -1,0 +1,5 @@
+# Domain Monitor Cron Jobs
+# Check domains daily at 9:00 AM
+0 9 * * * www-data /usr/local/bin/php /var/www/html/cron/check_domains.php >> /var/www/html/logs/cron.log 2>&1
+
+# Empty line required at end of cron file
